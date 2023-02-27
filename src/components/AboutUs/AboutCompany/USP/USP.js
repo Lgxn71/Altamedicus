@@ -1,9 +1,14 @@
+import React, { useState, useEffect } from "react";
+
 import TitleEyebrow from "@/components/TitleEyebrow/TitleEybrow";
 import Container from "@/components/UI/Container/Container";
 import styles from "./USP.module.css";
 import USPItem from "./USPItem";
-import DataItems from "@/DataForComponents/about-company/USPDataItems.json";
-const USP = () => {
+import DataItems from "@/DataForComponents/about-company/USPDataItems";
+
+const fetcher = (url) => fetch(url).then((res) => res.json());
+
+const USP = (props) => {
   return (
     <div className="background-color-dark-white">
       <Container>
@@ -14,15 +19,13 @@ const USP = () => {
         />
 
         <div className={styles["items-container"]}>
-          {DataItems.map((item) => {
-            return (
-              <USPItem
-                key={item.id}
-                title={item.title}
-                paragraph={item.paragraph}
-              />
-            );
-          })}
+          {DataItems.map((item) => (
+            <USPItem
+              key={item.id}
+              title={item.title}
+              paragraph={item.paragraph}
+            />
+          ))}
         </div>
       </Container>
     </div>
