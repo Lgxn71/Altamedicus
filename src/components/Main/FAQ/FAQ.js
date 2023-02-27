@@ -9,6 +9,8 @@ import FAQLinks from "./FAQLinks";
 import styles from "./FAQ.module.css";
 
 const FAQ = () => {
+  
+
   const [selectedSection, setSelectedSection] = useState(1);
 
   const selectSection = (index) => {

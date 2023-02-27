@@ -5,6 +5,33 @@ import NumbersData from "@/DataForComponents/main/Numbers/NumbersData.json";
 
 import styles from "./Numbers.module.css";
 const Numbers = () => {
+  const DUMMY_DATA = [
+    {
+      number: "3,000",
+      text: "Благодарных",
+      textLineBreak: "пациентов",
+      id: "1",
+    },
+    {
+      number: "70",
+      text: "Научных",
+      textLineBreak: "Статей",
+      id: "2",
+    },
+    {
+      number: "2,000",
+      text: "Операций",
+      textLineBreak: "в год",
+      id: "3",
+    },
+    {
+      number: "100",
+      text: "Дипломов",
+      textLineBreak: "и наград",
+      id: "4",
+    },
+  ];
+
   return (
     <div className="background-color-black ">
       <Container>
@@ -15,7 +42,7 @@ const Numbers = () => {
           </p>
         </div>
         <ul className={styles.achievments}>
-          {NumbersData.map((number) => {
+          {DUMMY_DATA.map((number) => {
             return (
               <Number
                 key={number.id}

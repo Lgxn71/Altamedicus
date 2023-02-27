@@ -1,9 +1,83 @@
 import Hero from "@/components/Hero/Hero";
 import PersonCard from "@/components/UI/PersonCard/PersonCard";
 import styles from "./Employees.module.css";
-import EmployeesData from "@/DataForComponents/about-company/employees/EmployeesData.json";
 import ContainerWithoutSpace from "@/components/UI/Container/ContainerWithoutSpace";
 const Employees = (props) => {
+  const DUMMY_DATA = [
+    {
+      id: "p1",
+      imageSrc: "/img/image.jpg",
+      fullname: "Tacobaev Tacobaevich",
+      occupation: "doctor",
+    },
+    {
+      id: "p2",
+      imageSrc: "/img/image.jpg",
+      fullname: "Tacobaev Tacobaevich",
+      occupation: "doctor",
+    },
+    {
+      id: "p3",
+      imageSrc: "/img/image.jpg",
+      fullname: "Tacobaev Tacobaevich",
+      occupation: "doctor",
+    },
+    {
+      id: "p4",
+      imageSrc: "/img/image.jpg",
+      fullname: "Tacobaev Tacobaevich",
+      occupation: "doctor",
+    },
+    {
+      id: "p5",
+      imageSrc: "/img/image.jpg",
+      fullname: "Tacobaev Tacobaevich",
+      occupation: "doctor",
+    },
+    {
+      id: "p6",
+      imageSrc: "/img/image.jpg",
+      fullname: "Tacobaev Tacobaevich",
+      occupation: "doctor",
+    },
+    {
+      id: "p7",
+      imageSrc: "/img/image.jpg",
+      fullname: "Tacobaev Tacobaevich",
+      occupation: "doctor",
+    },
+    {
+      id: "p8",
+      imageSrc: "/img/image.jpg",
+      fullname: "Tacobaev Tacobaevich",
+      occupation: "doctor",
+    },
+    {
+      id: "p9",
+      imageSrc: "/img/image.jpg",
+      fullname: "Tacobaev Tacobaevich",
+      occupation: "doctor",
+    },
+    {
+      id: "p10",
+      imageSrc: "/img/image.jpg",
+      fullname: "Tacobaev Tacobaevich",
+      occupation: "doctor",
+    },
+    {
+      id: "p11",
+      imageSrc: "/img/image.jpg",
+      fullname: "Tacobaev Tacobaevich",
+      occupation: "doctor",
+    },
+    {
+      id: "p12",
+      imageSrc: "/img/image.jpg",
+      fullname: "Tacobaev Tacobaevich",
+      occupation: "doctor",
+    },
+  ];
+
   return (
     <>
       <Hero
@@ -18,7 +92,7 @@ const Employees = (props) => {
 
       <ContainerWithoutSpace>
         <div className={styles["employees-container"]}>
-          {EmployeesData.map((employee) => (
+          {DUMMY_DATA.map((employee) => (
             <PersonCard
               key={employee.id}
               imageSrc={employee.imageSrc}
