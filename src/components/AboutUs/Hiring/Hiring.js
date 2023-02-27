@@ -1,7 +1,6 @@
 import Hero from "@/components/Hero/Hero";
 import ContainerWithoutSpace from "@/components/UI/Container/ContainerWithoutSpace";
 
-import HiringDataItems from "@/DataForComponents/about-company/hiring/HiringDataItems.json";
 
 import styles from "./Hiring.module.css";
 import HiringItem from "./HiringItem";

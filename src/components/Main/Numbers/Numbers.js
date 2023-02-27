@@ -1,7 +1,6 @@
 import Container from "@/components/UI/Container/Container";
 
 import Number from "./Number";
-import NumbersData from "@/DataForComponents/main/Numbers/NumbersData.json";
 
 import styles from "./Numbers.module.css";
 const Numbers = () => {

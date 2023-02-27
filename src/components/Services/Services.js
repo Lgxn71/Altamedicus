@@ -1,11 +1,39 @@
 import { useState } from "react";
 import Hero from "../Hero/Hero";
-import ServiceData from "@/DataForComponents/services/ServiceData.json";
 import Service from "./Service";
 import ContainerWithoutSpace from "../UI/Container/ContainerWithoutSpace";
 import styles from "./Services.module.css";
 const Services = () => {
-  const [services, setService] = useState(ServiceData);
+  const DUMMY_DATA = [
+    {
+      id: 1,
+      title: "Пластическая хирургия",
+      paragraph: "text",
+      isOpen: false,
+    },
+    { id: 2, title: "Гинекология", paragraph: "text", isOpen: false },
+    { id: 3, title: "УЗИ", paragraph: "text", isOpen: false },
+    { id: 4, title: "Эндокринология", paragraph: "text", isOpen: false },
+    { id: 5, title: "Кардиология", paragraph: "text", isOpen: false },
+    { id: 6, title: "Лор", paragraph: "text", isOpen: false },
+    {
+      id: 7,
+      title: "Процедурный кабинет",
+      paragraph: "text",
+      isOpen: false,
+    },
+    { id: 8, title: "Дерматалогия", paragraph: "text", isOpen: false },
+    { id: 9, title: "Терапия", paragraph: "text", isOpen: false },
+    { id: 10, title: "Неврология", paragraph: "text", isOpen: false },
+    { id: 11, title: "Онкология", paragraph: "text", isOpen: false },
+    {
+      id: 12,
+      title: "Торакальная хирургия",
+      paragraph: "text",
+      isOpen: false,
+    },
+  ];
+  const [services, setService] = useState(DUMMY_DATA);
 
   const clickHandler = (id) => {
     setService((prevService) =>

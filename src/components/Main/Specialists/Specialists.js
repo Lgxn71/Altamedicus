@@ -7,6 +7,33 @@ import SpecialistsData from "@/DataForComponents/main/Specialists/SpecialistsDat
 import styles from "./Specialists.module.css";
 
 const Specialists = () => {
+  const DUMMY_DATA = [
+    {
+      id: "e1",
+      src: "/img/image.jpg",
+      fullname: "Text",
+      occupation: "Text",
+    },
+    {
+      id: "e2",
+      src: "/img/image.jpg",
+      fullname: "Text",
+      occupation: "Text",
+    },
+    {
+      id: "e3",
+      src: "/img/image.jpg",
+      fullname: "Text",
+      occupation: "Text",
+    },
+    {
+      id: "e4",
+      src: "/img/image.jpg",
+      fullname: "Text",
+      occupation: "Text",
+    },
+  ];
+
   return (
     <Container>
       <TitleEyebrow
@@ -17,7 +44,7 @@ const Specialists = () => {
         paragraph={`Врачи Arta Medicus Clinic — эксперты в своих областях медицины и владеют всеми передовыми методиками. `}
       />
       <div className={styles["specialists-container"]}>
-        {SpecialistsData.map((person) => {
+        {DUMMY_DATA.map((person) => {
           return (
             <PersonCard
               key={person.id}
