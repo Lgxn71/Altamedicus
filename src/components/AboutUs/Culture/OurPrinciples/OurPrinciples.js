@@ -12,7 +12,7 @@ const OurPrinciples = () => {
           paragraph="Мы считаем, что лучшая работа — та, которая приносит удовольствие поэтому мы постоянно развиваем и укрепляем нашу корпоративную культуру."
           paragraphWidth="wide"
         />
-        <OurPrinciplesBody></OurPrinciplesBody>
+        <OurPrinciplesBody />
       </Container>
     </div>
   );
