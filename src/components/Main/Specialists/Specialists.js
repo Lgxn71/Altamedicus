@@ -2,7 +2,6 @@ import TitleEyebrow from "@/components/TitleEyebrow/TitleEybrow";
 import Container from "@/components/UI/Container/Container";
 import PersonCard from "@/components/UI/PersonCard/PersonCard";
 
-import SpecialistsData from "@/DataForComponents/main/Specialists/SpecialistsData.json";
 
 import styles from "./Specialists.module.css";
 
