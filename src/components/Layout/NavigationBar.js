@@ -2,7 +2,7 @@ import styles from "./NavigationBar.module.css";
 import Link from "next/link";
 import Image from "next/image";
 import { useRouter } from "next/router";
-import logo from "../../../public/img/logo.png";
+import logo from "../../../public/img/Logo.png";
 import ButtonPrimary from "../UI/Buttons/ButtonPrimary";
 
 const NavigationBar = () => {
