@@ -3,29 +3,36 @@ import styles from "./Specialists.module.css";
 import Link from "next/link";
 import SpecialistCard from "@/components/UI/SpecialistCard/SpecialistCard";
 
+// images
+
+import specialist1 from "../../../../public/img/Specialists/kuat_omurovich.png"
+import specialist2 from "../../../../public/img/Specialists/aigul_sahtanbergenovna.png"
+import specialist3 from "../../../../public/img/Specialists/bayan_toishibekovna.png"
+import specialist4 from "../../../../public/img/Specialists/lyan_chundun.png"
+
 // DUMMY_DATA
 const DUMMY_DATA = [
   {
     id: "e1",
-    src: "/img/specialists/kuat_omurovich.png",
+    src: specialist1,
     name: "Сеилов Куат Омурович",
     occupation: "Пластический хирург",
   },
   {
     id: "e2",
-    src: "/img/specialists/aigul_sahtanbergenovna.png",
+    src: specialist2,
     name: "Сеилова Айгуль Сахтанбергеновна",
     occupation: "Врач Акушер-гинеколог. Врач УЗИ",
   },
   {
     id: "e3",
-    src: "/img/specialists/bayan_toishibekovna.png",
+    src: specialist3,
     name: "Баусадыкова Баян Тойшибековна",
     occupation: "Врач акушер-гинеколог",
   },
   {
     id: "e4",
-    src: "/img/specialists/lyan_chundun.png",
+    src: specialist4,
     name: "Лян Чундун",
     occupation: "ЛОР врач",
   },

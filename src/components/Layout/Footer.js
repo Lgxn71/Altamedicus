@@ -19,10 +19,10 @@ const Footer = () => {
               </p>
             </div>
             <div className={styles.links}>
-              <Link className={styles.link} href="">О нас</Link>
-              <Link className={styles.link} href="">Амбулаторная Хирургия</Link>
-              <Link className={styles.link} href="">Специалисты</Link>
-              <Link className={styles.link} href="">Контакты</Link>
+              <Link className={styles.link} href="/about-us/about-company">О нас</Link>
+              <Link className={styles.link} href="/services">Услуги</Link>
+              <Link className={styles.link} href="/outpatient-surgery">Амбулаторная Хирургия</Link>
+              <Link className={styles.link} href="/contacts">Контакты</Link>
             </div>
           </div>
         </Container>
