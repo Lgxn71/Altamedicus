@@ -1,8 +1,9 @@
-import { useState } from "react";
+import React, { useState } from 'react';
 import styles from "./OutpatientTab.module.css";
 
-const outpatientTab = () => {
-  const [toggleState, setToggleState] = useState(+1);
+const OutpatientTab = () => {
+
+  const [toggleState, setToggleState] = useState(1);
 
   const toggleTab = (index) => {
     setToggleState(index);
@@ -119,4 +120,4 @@ const outpatientTab = () => {
     </div>
   );
 };
-export default outpatientTab;
+export default OutpatientTab;
