@@ -1,0 +1,9 @@
+.faqTab {
+    margin-bottom: 20px;
+    color: #787e8c;
+    cursor: pointer;
+  }
+  .faqTab:hover,
+  .faqTab.active {
+    color: black;
+  }

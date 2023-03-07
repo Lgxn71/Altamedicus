@@ -1,0 +1,27 @@
+.callToAction {
+  background-color: #f9fafb;
+  border: 1px solid #efeff0;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+.column {
+  max-width: 430px;
+  width: 100%;
+}
+.subTitle {
+    margin-bottom: 30px;
+}
+.columnInfo {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.detailInfo :first-child {
+  color: black;
+}
+.detailInfo :not(:first-child) {
+    margin-bottom: 15px;
+}

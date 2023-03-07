@@ -1,10 +1,11 @@
-import Services from "@/components/Services/Services";
 import Layout from "@/components/Layout/Layout";
+import Uslugi from "@/components/Uslugi/Uslugi";
+
 
 const ServicesPage = () => {
   return (
-    <Layout activeNavbar="services">
-      <Services></Services>
+    <Layout>
+      <Uslugi />
     </Layout>
   );
 };

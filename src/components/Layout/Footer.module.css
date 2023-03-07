@@ -1,0 +1,32 @@
+.header {
+  background-color: black;
+}
+.column {
+  max-width: 400px;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+.links {
+  max-width: 520px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.link {
+    color: #787E8C;
+}
+.link:hover {
+    color: white;
+}
+.bottom {
+    background-color: black;
+    border-top: 1px solid rgba(255, 255, 255, 0.170);
+}
+.footerBottomContainer {
+    max-width: 1110px;
+    margin: 0px auto;
+    padding: 20px 0px;
+}

@@ -1,5 +1,13 @@
-.specialists-container {
-  padding-top: 34px;
+.title {
+  max-width: 555px;
+}
+.header {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 50px;
+}
+.employees {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }

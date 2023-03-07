@@ -1,7 +1,32 @@
-.numbers-container {
+.numbers {
+  background-color: black;
+}
+.header {
   max-width: 510px;
 }
-.achievments {
+.header h2 {
+  color: #fff;
+  padding-bottom: 10px;
+}
+.achievements {
+  padding-top: 90px;
   display: flex;
   justify-content: space-between;
+}
+.singleAchievement {
+  display: flex;
+  align-items: center;
+}
+.singleAchievement p {
+  line-height: 24px;
+  color: white;
+}
+.number {
+  font-size: 40px;
+  font-weight: 700;
+  padding-right: 15px;
+}
+.achievementText span {
+  display: flex;
+  align-items: center;
 }

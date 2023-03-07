@@ -1,0 +1,27 @@
+.service {
+  width: 100%;
+  padding: 30px 0px;
+  border-bottom: 1px solid #e6e8ec;
+  cursor: pointer;
+}
+.serviceHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.serviceHeader:hover {
+  color: #0047ff;
+}
+.title {
+  color: black;
+  display: flex;
+  align-items: stretch;
+  width: 100%;
+}
+.title:hover {
+  color: #0047ff;
+}
+.description {
+    max-width: 1090px;
+    width: 100%;
+}

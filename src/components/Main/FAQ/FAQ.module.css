@@ -1,10 +1,25 @@
-.faq-container {
-  border-top: 1px solid #5b616e1a;
-  margin-top: 100px;
+.header {
+  margin-bottom: 50px;
 }
-.faq-content {
+.body {
   display: flex;
-  margin-top: 40px;
   justify-content: space-between;
-  align-items: top;
+  border-top: 1px solid #efeff0;
+  padding-top: 40px;
+}
+
+.FAQs {
+  max-width: 825px;
+  width: 100%;
+  display: flex;
+}
+
+.faqRow {
+  display: none;
+  max-width: 825px;
+  width: 100%;
+  cursor: pointer;
+}
+.faqRow.active {
+  display: block;
 }

@@ -1,9 +1,0 @@
-.persons-container {
-  margin-top: 72px;
-  display: flex;
-  justify-content: space-between;
-}
-.reviews-container {
-  display: flex;
-  flex-direction: column;
-}

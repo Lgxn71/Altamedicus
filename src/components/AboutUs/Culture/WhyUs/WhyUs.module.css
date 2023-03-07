@@ -1,6 +1,7 @@
-.container {
-  margin-top: 100px;
+.header {
+  max-width: 530px;
   width: 100%;
+  margin-bottom: 100px;
 }
 .image {
   width: 1110px;

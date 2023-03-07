@@ -1,37 +1,59 @@
-import TitleEyebrow from "@/components/TitleEyebrow/TitleEybrow";
-import Container from "@/components/UI/Container/Container";
+import Container from "@/components/Layout/Container";
 import styles from "./ActualOffers.module.css";
-const ActualOffer = () => {
+import Image from "next/image";
+
+// images
+import Offer_1 from "../../../../../public/img/Offers/Offer_1.png";
+import Offer_2 from "../../../../../public/img/Offers/Offer_2.png";
+
+const ActualOffers = () => {
   return (
-    <Container>
-      <TitleEyebrow
-        eyebrowText="Актуальные предложения"
-        titleText="Мы ставим ценность клиентов на первое место"
-        paragraph="Клиника Alta Medicus заботится о комфорте и удобстве своих пациентов. Мы делаем сервис доступным для каждого! "
-      />
-      <div className={styles["offers-container"]}>
-        <div className={styles["offer-container"]}>
-          <img className={styles.image} src="/img/image.jpg" alt="image" />
-          <h4 className={styles.title}>
-            Комплексное исследование женского здоровья.
-          </h4>
-          <p className={`text-gray ${styles.paragraph}`}>
-            Для любой представительницы прекрасного пола интимное здоровье -
-            деликатная и важная тема. Узнайте, как позаботиться о себе.
+    <section className={styles.actualOffers}>
+      <Container>
+        <div className={styles.header}>
+          <p className="eyebrows">Актуальные предложения</p>
+          <h2>Мы ставим ценность клиентов на первое место</h2>
+          <p>
+            Клиника Alta Medicus заботится о комфорте и удобстве своих
+            пациентов. <br />
+            Мы делаем сервис доступным для каждого!
           </p>
         </div>
-        <div>
-          <img className={styles.image} src="/img/image.jpg" alt="image" />
-          <h4 className={styles.title}>
-            Бесплатная консультация пластического хирурга!
-          </h4>
-          <p className={`text-gray ${styles.paragraph}`}>
-            В Alta Medicus вы можете проконсультироваться у пластического
-            хирурга по всем видам пластических операций абсолютно бесплатно!{" "}
-          </p>
+        <div className={styles.body}>
+          <div className={styles.column}>
+            <Image
+              src={Offer_1}
+              alt="Актуальные предложения"
+              width={540}
+              height={400}
+            />
+            <p className={styles.title}>
+              Комплексное исследование женского здоровья.
+            </p>
+            <p className={styles.description}>
+              Для любой представительницы прекрасного пола интимное здоровье -
+              деликатная и важная тема. Узнайте, как позаботиться о себе.
+            </p>
+          </div>
+          <div className={styles.column}>
+            <Image
+              src={Offer_2}
+              alt="Актуальные предложения"
+              width={540}
+              height={400}
+            />
+            <p className={styles.title}>
+              Бесплатная консультация пластического хирурга!
+            </p>
+            <p className={styles.description}>
+              В Alta Medicus вы можете проконсультироваться у пластического
+              хирурга по всем видам пластических операций абсолютно бесплатно!
+            </p>
+          </div>
         </div>
-      </div>
-    </Container>
+      </Container>
+    </section>
   );
 };
-export default ActualOffer;
+
+export default ActualOffers;

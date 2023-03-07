@@ -1,10 +1,11 @@
-import Layout from "@/components/Layout/Layout";
-import AboutCompanyComponent from "@/components/AboutUs/AboutCompany/AboutCompanyComponent";
-const AboutCompany = () => {
+import AboutCompany from "../../../components/AboutUs/AboutCompany/AboutCompany"
+import AboutUsLayout from "../../../components/Layout/AboutUsLayout"
+
+const AboutUs = (props) => {
   return (
-    <Layout activeNavbar="aboutUs" onSideBar={true} highlightSideBar="aboutCompany">
-      <AboutCompanyComponent onSideBar={true}></AboutCompanyComponent>
-    </Layout>
+    <AboutUsLayout>
+      <AboutCompany />
+    </AboutUsLayout>
   );
 };
-export default AboutCompany;
+export default AboutUs;

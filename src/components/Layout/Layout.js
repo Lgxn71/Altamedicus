@@ -1,15 +1,13 @@
-import Navbar from "./Navbar";
-import Footer from "./Footer/Footer";
+import Footer from "./Footer";
+import NavigationBar from "./NavigationBar";
+import CTA from "./CTA"
 function Layout(props) {
   return (
     <div>
-      <Navbar
-        activeNavbar={props.activeNavbar}
-        onSideBar={props.onSideBar}
-        highlightSideBar={props.highlightSideBar}
-      />
+      <NavigationBar />
       {props.children}
-      <Footer/>
+      <CTA />
+      <Footer />
     </div>
   );
 }

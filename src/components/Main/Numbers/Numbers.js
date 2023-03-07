@@ -1,59 +1,46 @@
-import Container from "@/components/UI/Container/Container";
-
-import Number from "./Number";
-
+import Container from "@/components/Layout/Container";
 import styles from "./Numbers.module.css";
-const Numbers = () => {
-  const DUMMY_DATA = [
-    {
-      number: "3,000",
-      text: "Благодарных",
-      textLineBreak: "пациентов",
-      id: "1",
-    },
-    {
-      number: "70",
-      text: "Научных",
-      textLineBreak: "Статей",
-      id: "2",
-    },
-    {
-      number: "2,000",
-      text: "Операций",
-      textLineBreak: "в год",
-      id: "3",
-    },
-    {
-      number: "100",
-      text: "Дипломов",
-      textLineBreak: "и наград",
-      id: "4",
-    },
-  ];
 
+const Numbers = () => {
   return (
-    <div className="background-color-black ">
+    <section className={styles.numbers}>
       <Container>
-        <div className={styles["numbers-container"]}>
+        <div className={styles.header}>
           <h2>Клиника Alta Medicus сегодня это:</h2>
-          <p className="text-gray">
-            Наши достижения в медицинском путешествии обозначено цифрами
-          </p>
+          <p>Наши достижения в медицинском путешествии обозначено цифрами</p>
         </div>
-        <ul className={styles.achievments}>
-          {DUMMY_DATA.map((number) => {
-            return (
-              <Number
-                key={number.id}
-                number={number.number}
-                text={number.text}
-                textLineBreak={number.textLineBreak}
-              />
-            );
-          })}
+        <ul className={styles.achievements}>
+          <li className={styles.singleAchievement}>
+            <p className={styles.number}>+3000</p>
+            <p className={styles.achievementText}>
+              <span>Благодарных</span>
+              <span>пациентов</span>
+            </p>
+          </li>
+          <li className={styles.singleAchievement}>
+            <p className={styles.number}>+70</p>
+            <p className={styles.achievementText}>
+              <span>Научных</span>
+              <span>статей</span>
+            </p>
+          </li>
+          <li className={styles.singleAchievement}>
+            <p className={styles.number}>+2000</p>
+            <p className={styles.achievementText}>
+              <span>Операций</span>
+              <span>в год</span>
+            </p>
+          </li>
+          <li className={styles.singleAchievement}>
+            <p className={styles.number}>+100</p>
+            <p className={styles.achievementText}>
+              <span>Дипломов</span>
+              <span>и Наград</span>
+            </p>
+          </li>
         </ul>
       </Container>
-    </div>
+    </section>
   );
 };
 

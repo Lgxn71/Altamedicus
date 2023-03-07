@@ -1,18 +1,21 @@
-import Container from "../../../UI/Container/Container";
-import TitleEyebrow from "../../../TitleEyebrow/TitleEybrow";
+import Container from "@/components/Layout/Container";
 import styles from "./WhyUs.module.css";
+import Image from "next/image";
+import MSpecialists from "../../../../../public/img/MSpecialists.png";
+
 const WhyUs = () => {
   return (
     <Container>
-      <TitleEyebrow
-        eyebrowText="Почему именно мы?"
-        titleText="Почему нам доверяют свое здоровье?"
-        paragraph="Врачи Arta Medicus Clinic — эксперты в своих областях медицины и владеют всеми передовыми методиками. "
-      />
-
-      <div className={styles.container}>
-        <img className={styles.image} src="/img/image.jpg" alt="change text" />
+      <div className={styles.header}>
+        <p className="eyebrows">Наши ценности</p>
+        <h2>Мы работаем вот так</h2>
+        <p>
+          Мы считаем, что лучшая работа — та, которая приносит удовольствие
+          поэтому мы постоянно развиваем и укрепляем нашу корпоративную
+          культуру.
+        </p>
       </div>
+      <Image src={MSpecialists} alt="Специалисты" width={1110} height={693} />
     </Container>
   );
 };

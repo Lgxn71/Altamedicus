@@ -1,0 +1,24 @@
+.whyTrustUs{
+  background-color: #F9FAFB;
+  border: 1px solid #efeff0;
+}
+.header {
+  margin-bottom: 100px;
+}
+.body {
+    display: grid;
+    grid-template-columns: 350px 350px 350px;
+    grid-gap: 50px;
+    
+  /* display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; */
+}
+.content {
+  max-width: 350px;
+}
+
+.title {
+  color: black;
+}

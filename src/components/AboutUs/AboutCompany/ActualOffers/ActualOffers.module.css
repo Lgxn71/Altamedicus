@@ -1,30 +1,17 @@
-.offers-container {
-  display: flex;
-  margin-top: 100px;
-  flex-direction: row;
-  align-items: center;
-  gap: 30px;
+.header {
+    max-width: 540px;
+    width: 100%;
+    margin-bottom: 100px;
+}
+.body {
+    display: flex;
+    justify-content: space-between;
+}
+
+.column {
+    max-width: 540px;
 }
 .title {
-  margin-top: 20px;
-  margin-bottom: 10px;
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 30px;
-  color: #343842;
-}
-.paragraph {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 30px;
-}
-.offer-container {
-}
-.image {
-  width: 540px;
-  height: 400px;
+    margin: 20px 0px 5px 0px;
+    color: black;
 }

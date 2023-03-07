@@ -1,40 +1,37 @@
 import { useState } from "react";
+import styles from "./FAQItem.module.css";
 
+// Importing FontAwesome
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlus } from "@fortawesome/free-solid-svg-icons";
 
-import style from "./FAQItem.module.css";
-
 const FAQItem = (props) => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [open, setOpen] = useState(false);
 
-  const clickHandler = () => {
-    if (isOpen) {
-      setIsOpen(false);
-    } else {
-      setIsOpen(true);
-    }
+  const dropHandler = () => {
+    setOpen(!open);
   };
 
   return (
-    <div className={style["item-container"]}>
-      <div className={style["title-handler"]} onClick={clickHandler}>
-        <h4 className={style.title}>{props.title}</h4>
-        <FontAwesomeIcon
-          className={`${style["faq-icon"]} 
-          ${!isOpen ? style["faq-icon-active"] : ""}`}
-          icon={faPlus}
-          rotation={180}
-        />
+    <div className={styles.singleFAQ} onClick={dropHandler}>
+      <div className={styles.description}>
+        <p className={styles.title}>{props.title}</p>
+        <p
+          className={
+            open ? `${styles.answer} ${styles.displayBlock}` : styles.answer
+          }
+        >
+          {props.answer}
+        </p>
       </div>
-      <p
-        className={`text-gray 
-          ${isOpen ? style["display-block"] : style["display-none"]}
-          ${style.paragraph}`}
-      >
-        {props.text}
-      </p>
+      <FontAwesomeIcon
+        className={`${styles["faq-icon"]} 
+          ${!open ? styles["faq-icon-active"] : ""}`}
+        icon={faPlus}
+        rotation={180}
+      />
     </div>
   );
 };
+
 export default FAQItem;
