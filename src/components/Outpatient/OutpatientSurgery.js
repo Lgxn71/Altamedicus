@@ -2,7 +2,7 @@ import Container from "../Layout/Container";
 import styles from "./OutpatientSurgery.module.css";
 import OutpatientTab from "./OutpatientTab";
 
-const OutpatientSurgery = () => {
+const OutpatientSurgery = (ç) => {
   return (
     <section>
       <Container>
