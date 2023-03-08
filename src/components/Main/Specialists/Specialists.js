@@ -47,7 +47,7 @@ const Specialists = () => {
         <div className={styles.header}>
           <div className={styles.title}>
             <p className="eyebrows">Наши Специалисты</p>
-            <h2>Забота о вашем здоровье в сердце столицы!</h2>
+            <h2>доверьте заботу о своем здоровье профессионалам!</h2>
             <p>
               Врачи Arta Medicus Clinic — эксперты в своих областях медицины и
               владеют всеми передовыми методиками.

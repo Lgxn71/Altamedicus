@@ -100,7 +100,7 @@ const Specialists = () => {
             Наша <span className="highlight">Команда</span>
           </h1>
           <p>
-            Врачи Arta Medicus Clinic — эксперты в своих областях медицины и
+            Врачи Alta Medicus Clinic — эксперты в своих областях медицины и
             владеют всеми передовыми методиками.
           </p>
         </div>

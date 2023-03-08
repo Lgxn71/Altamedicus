@@ -14,12 +14,11 @@ const CTA = () => {
           </div>
           <div className={styles.column}>
             <h2>Свяжитесь с нами</h2>
-            <p className={styles.subTitle}>Наша клиника работает с 8:00 до 20:00 без выходных.</p>
             <div className={styles.columnInfo}>
               <ul className={styles.clinicInfo}>
                 <li className={styles.detailInfo}>
                   <p>Телефон</p>
-                  <p>+7172 66 44 55</p>
+                  <p>+7172 77 77 69</p>
                 </li>
                 <li className={styles.detailInfo}>
                   <p>Email</p>
@@ -27,13 +26,13 @@ const CTA = () => {
                 </li>
                 <li className={styles.detailInfo}>
                   <p>Адрес</p>
-                  <p>Мангилик - ель 21 / 1, 3 этаж</p>
+                  <p>Ул.Кенесары 8, 3 этаж</p>
                 </li>
               </ul>
               <ul className={styles.clinicInfo}>
                 <li className={styles.detailInfo}>
                   <p>Сот. номер</p>
-                  <p>+7172 66 44 55</p>
+                  <p>++7 775 477 8811</p>
                 </li>
                 <li className={styles.detailInfo}>
                   <p>Соц. сети</p>
