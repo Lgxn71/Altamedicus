@@ -19,24 +19,24 @@ const WhyUs = (props) => {
             <p className={styles.description}>Все специалисты имеют квалификационные категории и ученые степени.</p>
           </li>
           <li className={styles.content}>
-            <p className={styles.title}>Сертифицированные врачи</p>
-            <p className={styles.description}>Все специалисты имеют квалификационные категории и ученые степени.</p>
+            <p className={styles.title}>Современные технологии</p>
+            <p className={styles.description}>В своей работе мы применяем современные методы диагностики и лечения.</p>
           </li>
           <li className={styles.content}>
-            <p className={styles.title}>Сертифицированные врачи</p>
-            <p className={styles.description}>Все специалисты имеют квалификационные категории и ученые степени.</p>
+            <p className={styles.title}>Многолетний опыт</p>
+            <p className={styles.description}>Средний профессиональный стаж врачей в Alta Medicus clinic - 20 лет.</p>
           </li>
           <li className={styles.content}>
-            <p className={styles.title}>Сертифицированные врачи</p>
-            <p className={styles.description}>Все специалисты имеют квалификационные категории и ученые степени.</p>
+            <p className={styles.title}>Мы работаем на качество</p>
+            <p className={styles.description}>70% наших пациентов приходят к нам по рекомендации, а это многое значит!</p>
           </li>
           <li className={styles.content}>
-            <p className={styles.title}>Сертифицированные врачи</p>
-            <p className={styles.description}>Все специалисты имеют квалификационные категории и ученые степени.</p>
+            <p className={styles.title}>Амбулаторная хирургия</p>
+            <p className={styles.description}>Операции  выполняются без необходимости круглосуточного пребывания в клинике .</p>
           </li>
           <li className={styles.content}>
-            <p className={styles.title}>Сертифицированные врачи</p>
-            <p className={styles.description}>Все специалисты имеют квалификационные категории и ученые степени.</p>
+            <p className={styles.title}>У нас нет очередей</p>
+            <p className={styles.description}>У нас уютная атмосфера без очередей и скопления пациентов.</p>
           </li>
         </ul>
       </Container>

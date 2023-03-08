@@ -11,3 +11,7 @@
   justify-content: space-between;
   align-items: center;
 }
+.specialists {
+  background-color: #F9FAFB;
+  border: 1px solid #EFEFF0;
+}

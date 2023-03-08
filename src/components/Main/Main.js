@@ -3,6 +3,7 @@ import Specialists from "./Specialists/Specialists";
 import Testimonials from "./Testimonials/Testimonials"
 import FAQ from "./FAQ/FAQ";
 import HeroSection from "../Hero/HeroSection";
+import MainVideo from "./MainVideo/MainVideo";
 
 const Main = () => {
   return (
@@ -10,6 +11,7 @@ const Main = () => {
       <HeroSection />
       <Numbers />
       <Specialists />
+      <MainVideo />
       <Testimonials />
       <FAQ />
     </main>

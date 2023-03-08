@@ -67,7 +67,7 @@ const Hiring = () => {
                 </p>
               </li>
               <li className={styles.hiringDetails}>
-                <h2>01</h2>
+                <h2>03</h2>
                 <p className={styles.title}>Найм</p>
                 <p>
                   Если кандидат успешно прошел проверку документов и

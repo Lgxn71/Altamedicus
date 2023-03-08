@@ -42,7 +42,7 @@ const DUMMY_DATA = [
 
 const Specialists = () => {
   return (
-    <section>
+    <section className={styles.specialists}>
       <Container>
         <div className={styles.header}>
           <div className={styles.title}>
