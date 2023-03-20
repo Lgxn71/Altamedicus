@@ -7,11 +7,32 @@
   margin-bottom: 50px;
 }
 .employees {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-content: stretch;
+  gap: 50px 25px;
+  max-width: 1110px;
+  width: 100%;
 }
 .specialists {
   background-color: #F9FAFB;
   border: 1px solid #EFEFF0;
+}
+@media (max-width: 1230px) {
+  .employees {
+    grid-template-columns: 1fr 1fr;
+    gap: 50px 50px;
+  }
+  .header {
+    display: block;
+  }
+  .title {
+    padding-bottom: 20px;
+  }
+}
+@media (max-width: 767PX) {
+  .employees {
+    grid-template-columns: 1fr;
+    gap: 50px 0PX;
+  }
 }

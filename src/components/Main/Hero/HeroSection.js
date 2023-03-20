@@ -1,12 +1,12 @@
-import Container from "../Layout/Container";
+import Container from "../../Layout/Container";
 import styles from "./HeroSection.module.css";
 import Image from "next/image";
-import ButtonPrimary from "../UI/Buttons/ButtonPrimary";
-import HeroImg from "../../../public/img/HeroIMG.png"
+import ButtonPrimary from "../../UI/Buttons/ButtonPrimary";
+import HeroImg from "../../../../public/img/HeroIMG.png"
 
 const HeroSection = () => {
   return (
-    <section>
+    <section className={styles.hero}>
       <Container>
         <div className={styles.header}>
           <h1>
@@ -20,7 +20,7 @@ const HeroSection = () => {
           <ButtonPrimary>Заказать Звонок</ButtonPrimary>
         </div>
       </Container>
-      <Image src={HeroImg} alt="HeroImage" className={styles.heroImage}  />
+      <Image src={HeroImg} alt="HeroImage" className={styles.heroImage} />
     </section>
   );
 };

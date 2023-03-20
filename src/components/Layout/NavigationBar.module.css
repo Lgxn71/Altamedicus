@@ -8,8 +8,8 @@
 }
 .navContainer {
   max-width: 1110px;
-  width: 100%;
   margin: 0px auto;
+  padding: 0px 80px;
 }
 .navbarLogo {
   display: flex;
@@ -24,14 +24,16 @@
   padding: 16px 0px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .navLinks {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  max-width: 680px;
+  width: 100%;
 }
 .navLink {
-  margin-right: 40px;
   color: #787e8c;
 }
 .navLink:hover,
@@ -39,4 +41,34 @@
   color: #000000;
   cursor: pointer;
 }
-
+.burgerMenu {
+  display: none;
+}
+.burgerLine {
+  display: block;
+  width: 25px;
+  margin: 5px auto;
+  transition: all 0.3s ease-in-out;
+  background-color: #000000;
+  height: 3px;
+}
+.mobileNav {
+  display: none;
+}
+@media (max-width: 1024px) {
+  .navContainer {
+    max-width: 944px;
+    padding: 0px 40px;
+  }
+  .burgerMenu {
+    display: block;
+  }
+  .navLinks {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  .navContainer {
+    padding: 0px 20px;
+  }
+}

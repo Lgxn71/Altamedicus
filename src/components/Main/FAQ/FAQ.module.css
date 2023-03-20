@@ -23,3 +23,9 @@
 .faqRow.active {
   display: block;
 }
+
+@media (max-width: 767px) {
+  .body {
+    flex-direction: column;
+  }
+}

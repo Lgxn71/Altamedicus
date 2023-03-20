@@ -14,7 +14,7 @@ const WhyUs = () => {
           постоянному совершенствованию и развитию.
         </p>
       </div>
-      <Image src={MSpecialists} alt="Специалисты" width={1110} height={693} />
+      <Image src={MSpecialists} alt="Специалисты" width={1110} height={693} className={styles.IMG} />
     </Container>
   );
 };

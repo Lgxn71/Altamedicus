@@ -22,6 +22,7 @@ const ActualOffers = () => {
         <div className={styles.body}>
           <div className={styles.column}>
             <Image
+              className={styles.IMG}
               src={Offer_1}
               alt="Актуальные предложения"
               width={540}
@@ -37,6 +38,7 @@ const ActualOffers = () => {
           </div>
           <div className={styles.column}>
             <Image
+            className={styles.IMG}
               src={Offer_2}
               alt="Актуальные предложения"
               width={540}

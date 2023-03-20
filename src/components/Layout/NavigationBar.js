@@ -62,6 +62,12 @@ const NavigationBar = () => {
               </Link>
               <ButtonPrimary>Заказать звонок</ButtonPrimary>
             </div>
+            <div className={styles.burgerMenu}>
+              <span className={styles.burgerLine}></span>
+              <span className={styles.burgerLine}></span>
+              <span className={styles.burgerLine}></span>
+            </div>
+            <div className={styles.mobileNav}></div>
           </div>
         </div>
       </nav>

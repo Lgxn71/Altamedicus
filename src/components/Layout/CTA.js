@@ -7,9 +7,11 @@ const CTA = () => {
     <section className={styles.callToAction}>
       <Container>
         <div className={styles.row}>
-          <div className={styles.column}>
+          <div className={`${styles.column} ${styles.firstColumn}`}>
             <h2>Остались вопросы? Закажите Звонок!</h2>
-            <p className={styles.subTitle}>Перезвоним, проконсультируем, и запишем Вас на прием!</p>
+            <p className={styles.subTitle}>
+              Перезвоним, проконсультируем, и запишем Вас на прием!
+            </p>
             <ButtonPrimary>Заказать звонок</ButtonPrimary>
           </div>
           <div className={styles.column}>
@@ -40,7 +42,9 @@ const CTA = () => {
                 </li>
                 <li className={styles.detailInfo}>
                   <p>Время работы</p>
-                  <p>Пн-Пт: 09:00-19:00 <br/> Сб: 09:00-16:00</p>
+                  <p>
+                    Пн-Пт: 09:00-19:00 <br /> Сб: 09:00-16:00
+                  </p>
                 </li>
               </ul>
             </div>

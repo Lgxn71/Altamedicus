@@ -19,7 +19,7 @@
   display: flex;
   align-items: center;
   padding: 25px;
-  margin-bottom: 25px;
+  margin: 0px 25px 25px 0px;
 }
 .testimonial:hover,
 .testimonial.active {
@@ -55,4 +55,23 @@
 }
 .testimonialText {
   color: #000;
+}
+
+@media (max-width: 767px) {
+  .body {
+    flex-direction: column-reverse;
+  }
+  .testimonial {
+    margin: 0px 0px 25px 0px;
+  }
+  .testimonialColumn {
+    max-width: 685px;
+  }
+  .testimonialContent {
+    max-width: 685px;
+  }
+  .review {
+    margin-bottom: 50px;
+  }
+  
 }

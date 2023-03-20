@@ -18,13 +18,6 @@ const Numbers = () => {
             </p>
           </li>
           <li className={styles.singleAchievement}>
-            <p className={styles.number}>+70</p>
-            <p className={styles.achievementText}>
-              <span>Научных</span>
-              <span>статей</span>
-            </p>
-          </li>
-          <li className={styles.singleAchievement}>
             <p className={styles.number}>+2000</p>
             <p className={styles.achievementText}>
               <span>Операций</span>
@@ -36,6 +29,13 @@ const Numbers = () => {
             <p className={styles.achievementText}>
               <span>Дипломов</span>
               <span>и Наград</span>
+            </p>
+          </li>
+          <li className={styles.singleAchievement}>
+            <p className={styles.number}>+70</p>
+            <p className={styles.achievementText}>
+              <span>Научных</span>
+              <span>статей</span>
             </p>
           </li>
         </ul>

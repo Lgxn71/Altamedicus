@@ -1,6 +1,6 @@
 import Container from "@/components/Layout/Container";
 import Image from "next/image";
-import AboutUsHeroIMG from "../../../../../public/img/AboutUsHeroIMG.png"
+import AboutUsHeroIMG from "../../../../../public/img/AboutUsHeroIMG.png";
 import styles from "./AboutUsHero.module.css";
 
 const AboutUsHero = () => {

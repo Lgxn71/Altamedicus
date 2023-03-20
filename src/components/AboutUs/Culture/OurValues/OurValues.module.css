@@ -20,3 +20,15 @@
 .title {
     color: black;
 }
+
+@media (max-width: 767px) {
+    .body {
+        grid-template-columns: 1fr;
+    }
+    .content {
+        max-width: 100%;
+    }
+    .header {
+        margin-bottom: 60px;
+    }
+}

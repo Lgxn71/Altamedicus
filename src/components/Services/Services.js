@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Hero from "../Hero/Hero";
+import Hero from "../Main/Hero/Hero";
 import Service from "./Service";
 import ContainerWithoutSpace from "../UI/Container/ContainerWithoutSpace";
 import styles from "./Services.module.css";

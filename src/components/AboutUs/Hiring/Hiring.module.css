@@ -21,6 +21,7 @@
 }
 .hiringProcess {
     display: flex;
+    justify-content: space-between;
     gap: 40px;
 }
 
@@ -29,4 +30,12 @@
     max-width: 345px;
     width: 100%;
     border: 1px solid #e6e8ec;
+}
+@media (max-width: 1024px) {
+  .hiringProcess {
+    flex-wrap: wrap;
+  }
+  .hiringDetails {
+    max-width: 100%;
+  }
 }

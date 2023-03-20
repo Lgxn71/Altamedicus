@@ -3,6 +3,7 @@ import Container from "@/components/Layout/Container";
 import styles from "./FAQ.module.css";
 import FAQItem from "./FAQItem";
 import FAQTab from "./FAQTab";
+import Dropdown from "@/components/Layout/Dropdown";
 
 // // ------------------------- DUMMY_DATA START -------------------------
 const DUMMY_DATA_1 = [
@@ -159,6 +160,7 @@ const FAQ = () => {
         </div>
         <div className={styles.body}>
           <FAQTab toggleState={toggleState} toggleTab={toggleTab} />
+          <Dropdown toggleState={toggleState} toggleTab={toggleTab} />
           <div className={styles.FAQs}>
             <div
               className={

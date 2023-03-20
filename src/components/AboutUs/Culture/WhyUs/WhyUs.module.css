@@ -3,7 +3,12 @@
   width: 100%;
   margin-bottom: 100px;
 }
-.image {
-  width: 1110px;
-  height: 693px;
+.IMG {
+  width: 100%;
+  height: auto;
+}
+@media (max-width: 768px) {
+  .header {
+    margin-bottom: 60px;
+  }
 }

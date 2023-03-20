@@ -30,3 +30,36 @@
     margin: 0px auto;
     padding: 20px 0px;
 }
+@media (max-width: 968px) {
+  .row {
+    flex-direction: column-reverse;
+  }
+  .column {
+    margin-top: 50px;
+  }
+  .links {
+    max-width: 100%;
+  }
+}
+@media (max-width:767px) {
+  .footerBottomContainer {
+    padding: 20px 40px;
+  }
+}
+@media (max-width:430px) {
+  .footerBottomContainer {
+    padding: 20px;
+  }
+  .footerBottomContainer p {
+    font-size: 12px;
+  }
+}
+@media (max-width: 520px) {
+  .links {
+    display: flex;
+    flex-direction: column;
+  }
+  .link {
+    padding-bottom: 20px;
+  }
+}
