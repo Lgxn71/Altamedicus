@@ -5,16 +5,10 @@
 
 .videoContainer {
   position: relative;
-  overflow: hidden;
-  height: 0px;
   padding-bottom: 56.25%; /* 16:9 aspect ratio */
-  z-index: 50px;
-}
-.videoContainer iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 50px;
+  height: 0;
+  overflow: hidden;
+  z-index: 0;
 }
 .video {
   position: absolute;
