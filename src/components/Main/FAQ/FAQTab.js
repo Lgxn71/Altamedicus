@@ -5,13 +5,23 @@ const FAQTab = (props) => {
     <ul className={styles.faqTabs}>
       <li
         className={
+          props.toggleState === 0
+            ? `${styles.faqTab} ${styles.active}`
+            : styles.faqTab
+        }
+        onClick={() => props.toggleTab(0)}
+      >
+        Клиника
+      </li>
+      <li
+        className={
           props.toggleState === 1
             ? `${styles.faqTab} ${styles.active}`
             : styles.faqTab
         }
         onClick={() => props.toggleTab(1)}
       >
-        Клиника
+        Пластическая хирургия
       </li>
       <li
         className={
@@ -21,7 +31,7 @@ const FAQTab = (props) => {
         }
         onClick={() => props.toggleTab(2)}
       >
-        Пластическая хирургия
+        Гинекология
       </li>
       <li
         className={
@@ -30,16 +40,6 @@ const FAQTab = (props) => {
             : styles.faqTab
         }
         onClick={() => props.toggleTab(3)}
-      >
-        Гинекология
-      </li>
-      <li
-        className={
-          props.toggleState === 4
-            ? `${styles.faqTab} ${styles.active}`
-            : styles.faqTab
-        }
-        onClick={() => props.toggleTab(4)}
       >
         Эндрокринолог
       </li>

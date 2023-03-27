@@ -3,7 +3,7 @@ import Container from "@/components/Layout/Container";
 import styles from "./FAQ.module.css";
 import FAQItem from "./FAQItem";
 import FAQTab from "./FAQTab";
-import Dropdown from "@/components/Layout/Dropdown";
+import MyDropdown from "../../UI/Dropdown/MyDropdown"
 
 // // ------------------------- DUMMY_DATA START -------------------------
 const DUMMY_DATA_1 = [
@@ -141,7 +141,7 @@ const DUMMY_DATA_4 = [
 
 // ------------------------- DUMMY_DATA END -------------------------
 const FAQ = () => {
-  const [toggleState, setToggleState] = useState(1);
+  const [toggleState, setToggleState] = useState(0);
 
   const toggleTab = (index) => {
     setToggleState(index);
@@ -160,8 +160,26 @@ const FAQ = () => {
         </div>
         <div className={styles.body}>
           <FAQTab toggleState={toggleState} toggleTab={toggleTab} />
-          <Dropdown toggleState={toggleState} toggleTab={toggleTab} />
+          <MyDropdown items={['Клиника', 'Пластическая Хирургия', 'Гинекология' , 'Эндрокринолог']} toggleTab={toggleTab} />
           <div className={styles.FAQs}>
+            <div
+              className={
+                toggleState === 0
+                  ? `${styles.faqRow} ${styles.active}`
+                  : styles.faqRow
+              }
+              onClick={() => toggleTab(0)}
+            >
+              {DUMMY_DATA_1.map((faqItem) => (
+                <FAQItem
+                  toggleState={toggleState}
+                  toggleTab={toggleTab}
+                  key={faqItem.id}
+                  title={faqItem.title}
+                  answer={faqItem.answer}
+                />
+              ))}
+            </div>
             <div
               className={
                 toggleState === 1
@@ -170,7 +188,7 @@ const FAQ = () => {
               }
               onClick={() => toggleTab(1)}
             >
-              {DUMMY_DATA_1.map((faqItem) => (
+              {DUMMY_DATA_2.map((faqItem) => (
                 <FAQItem
                   toggleState={toggleState}
                   toggleTab={toggleTab}
@@ -188,7 +206,7 @@ const FAQ = () => {
               }
               onClick={() => toggleTab(2)}
             >
-              {DUMMY_DATA_2.map((faqItem) => (
+              {DUMMY_DATA_3.map((faqItem) => (
                 <FAQItem
                   toggleState={toggleState}
                   toggleTab={toggleTab}
@@ -205,24 +223,6 @@ const FAQ = () => {
                   : styles.faqRow
               }
               onClick={() => toggleTab(3)}
-            >
-              {DUMMY_DATA_3.map((faqItem) => (
-                <FAQItem
-                  toggleState={toggleState}
-                  toggleTab={toggleTab}
-                  key={faqItem.id}
-                  title={faqItem.title}
-                  answer={faqItem.answer}
-                />
-              ))}
-            </div>
-            <div
-              className={
-                toggleState === 4
-                  ? `${styles.faqRow} ${styles.active}`
-                  : styles.faqRow
-              }
-              onClick={() => toggleTab(4)}
             >
               {DUMMY_DATA_4.map((faqItem) => (
                 <FAQItem
