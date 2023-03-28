@@ -3,6 +3,7 @@
     display: inline-block;
     padding-bottom: 15px;
     margin-bottom: 50px;
+    width: 100%;
   }
   
   .dropdownButton {

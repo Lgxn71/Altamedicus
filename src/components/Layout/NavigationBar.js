@@ -110,7 +110,6 @@ const NavigationBar = () => {
               }
             ></span>
           </div>
-          <div className={styles.mobileNav}></div>
         </div>
       </div>
       <div
@@ -149,7 +148,9 @@ const NavigationBar = () => {
           >
             Контакты
           </Link>
-          <ButtonPrimary>Заказать звонок</ButtonPrimary>
+          <div className={styles.buttonContainer}>
+            <ButtonPrimary>Заказать звонок</ButtonPrimary>
+          </div>
         </div>
       </div>
     </nav>

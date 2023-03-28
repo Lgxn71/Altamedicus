@@ -1,16 +1,28 @@
 import React, { useState } from 'react';
 import styles from "./OutpatientTab.module.css";
+import MyDropdown from "../../components/UI/Dropdown/MyDropdown"
 
 const OutpatientTab = () => {
 
-  const [toggleState, setToggleState] = useState(1);
+  const [toggleState, setToggleState] = useState(0);
 
   const toggleTab = (index) => {
     setToggleState(index);
   };
+
   return (
     <div className={styles.body}>
       <ul className={styles.outpatientTabs}>
+        <li
+          className={
+            toggleState === 0
+              ? `${styles.outpatientTab} ${styles.active}`
+              : styles.outpatientTab
+          }
+          onClick={() => toggleTab(0)}
+        >
+          Как это работает
+        </li>
         <li
           className={
             toggleState === 1
@@ -19,24 +31,15 @@ const OutpatientTab = () => {
           }
           onClick={() => toggleTab(1)}
         >
-          Как это работает
-        </li>
-        <li
-          className={
-            toggleState === 2
-              ? `${styles.outpatientTab} ${styles.active}`
-              : styles.outpatientTab
-          }
-          onClick={() => toggleTab(2)}
-        >
           Предоставляемые операции
         </li>
       </ul>
+      <MyDropdown items={['Как это работает', 'Предоставляемые операции']} toggleTab={toggleTab} />
       <div
         className={
-          toggleState === 1 ? `${styles.tabs} ${styles.active}` : styles.tabs
+          toggleState === 0 ? `${styles.tabs} ${styles.active}` : styles.tabs
         }
-        onClick={() => toggleTab(1)}
+        onClick={() => toggleTab(0)}
       >
         <ul className={styles.content}>
           <li className={styles.outpatientContent}>
@@ -82,9 +85,9 @@ const OutpatientTab = () => {
       </div>
       <div
         className={
-          toggleState === 2 ? `${styles.tabs} ${styles.active}` : styles.tabs
+          toggleState === 1 ? `${styles.tabs} ${styles.active}` : styles.tabs
         }
-        onClick={() => toggleTab(2)}
+        onClick={() => toggleTab(1)}
       >
         <ul className={styles.content}>
           <li className={styles.outpatientContent}>

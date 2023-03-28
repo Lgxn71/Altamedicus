@@ -1,4 +1,10 @@
-
 .header {
     max-width: 660px;
+    padding-bottom: 80px;
+}
+
+@media (max-width: 767px) {
+    .header {
+        padding-bottom: 60px;
+    }
 }
