@@ -16,7 +16,7 @@
     max-width: 688px;
   }
 }
-@media (max-width: 430px) {
+@media (max-width: 530px) {
   .container {
     padding: 80px 20px;
     /* max-width: 688px; */

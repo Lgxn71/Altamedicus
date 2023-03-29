@@ -67,7 +67,7 @@
   width: 100%;
 }
 .sidebarLinks {
-  padding: 20px 40px;
+  padding: 20px 20px;
   border-bottom: 1px solid #e6e8ec;
   color: #787e8c;
 }
@@ -106,12 +106,18 @@
 }
 @media (max-width: 767px) {
   .navContainer {
-    padding: 0px 20px;
+    padding: 0px 40px;
   }
-  .buttonContainer {
-    padding: 20px 20px;
+
+  .sidebarLinks {
+    padding: 20px 40px;
   }
+}
+@media (max-width: 530px) {
   .sidebarLinks {
     padding: 20px 20px;
+  }
+  .navContainer {
+    padding: 0px 20px;
   }
 }

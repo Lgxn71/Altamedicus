@@ -19,8 +19,7 @@
 }
 .link {
     color: #787E8C;
-    padding: 20px 0px;
-    min-width: 95px;
+    padding: 20px 0px;;
 }
 .link:hover {
     color: #787E8C;
@@ -36,7 +35,6 @@
     }
     .container {
         padding: 0px 40px;
-        /* max-width: 100%; */
     }
 }
 @media (max-width: 530px) {
@@ -44,7 +42,7 @@
         padding: 0px 20px;
         overflow: scroll;
         overflow-y: scroll;
-        /* justify-content: flex-start; */
+        min-width: 560px;
     }
     .link {
         margin-right: 20px;
