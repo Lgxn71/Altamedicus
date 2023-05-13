@@ -5,10 +5,21 @@ import Link from "next/link";
 import Image from "next/image";
 import logo from "../../../public/img/Logo.png";
 import ButtonPrimary from "../UI/Buttons/ButtonPrimary";
+import Backdrop from "../UI/Modal/Backdrop";
+import Modal from "../UI/Modal/Modal";
 
 const NavigationBar = () => {
   const [click, setClick] = useState(false);
   const [open, setOpen] = useState(false);
+  const [modalIsOpen,setModalIsOpen] = useState(false);
+
+
+  const openModalHandler =(event)=>{
+    setModalIsOpen(true)
+  }
+  const  closeModalHandler = ()=>{
+    setModalIsOpen(false)
+  }
 
   const navBarHandler = () => {
     if (window.innerWidth >= 768) {
@@ -29,8 +40,12 @@ const NavigationBar = () => {
     setOpen(false);
   };
   const router = useRouter();
-
+console.log(modalIsOpen)
   return (
+
+    <>
+    {modalIsOpen?     <Modal onOpenModal={openModalHandler} onCloseModal = {closeModalHandler}/> : undefined}
+
     <nav className={styles.navigation}>
       <div className={styles.navContainer}>
         <div className={styles.navbar}>
@@ -85,7 +100,7 @@ const NavigationBar = () => {
             >
               Контакты
             </Link>
-            <ButtonPrimary>Заказать звонок</ButtonPrimary>
+            <ButtonPrimary onClick={openModalHandler}>Заказать звонок</ButtonPrimary>
           </div>
           <div className={styles.burger} onClick={() => setOpen(!open)}>
             <span
@@ -154,6 +169,8 @@ const NavigationBar = () => {
         </div>
       </div>
     </nav>
+    </>
+    
   );
 };
 

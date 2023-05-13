@@ -16,7 +16,7 @@ const AboutCompanyVideo = (props) => {
         <div className={styles.videoContainer}>
           <iframe
             className={styles.video}
-            src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+            src="https://www.youtube.com/embed/pyd_ldlso1k"
             title="YouTube video player"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"

@@ -1,0 +1,11 @@
+.form{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 510px;
+    border-radius:2px ;
+    border: 1px solid #D9DDE7;
+    z-index: 3000;
+    transform: translate(-50%, -50%);
+    background-color: white;
+}

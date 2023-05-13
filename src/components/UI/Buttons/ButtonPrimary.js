@@ -7,12 +7,10 @@ const ButtonPrimary = (props) => {
   } else {
     isInNavBar = styles["btn-blue"];
   }
-  const buttonClickHandler = (event) => {
-    event.preventDefault();
-  };
+  
 
   return (
-    <button onClick={buttonClickHandler} className={isInNavBar} href="">
+    <button onClick={props.onClick} className={isInNavBar} href="">
       {props.children}
     </button>
   );
