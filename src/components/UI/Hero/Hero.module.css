@@ -1,0 +1,52 @@
+.heroContainer {
+  padding: 230px 0 150px 0;
+  max-width: 1110px;
+  margin: 0px auto;
+}
+.aboutUsPadding {
+  padding-top: 270px;
+  padding-bottom: 70px;
+}
+.title {
+  max-width: 762px;
+  width: 100%;
+}
+.title p {
+  padding-bottom: 30px;
+}
+
+.heroImage {
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 1024px) {
+  .heroContainer {
+    padding: 160px 40px 100px 40px;
+  }
+  .aboutUsPadding {
+    padding-top: 270px;
+    padding-bottom: 70px;
+  }
+}
+
+@media (max-width: 768px) {
+  .heroContainer {
+    max-width: 700px;
+    padding: 160px 40px 100px 40px;
+  }
+  .aboutUsPadding {
+    padding-top: 230px;
+    padding-bottom: 70px;
+  }
+}
+
+@media (max-width: 530px) {
+  .heroContainer {
+    padding: 120px 20px 60px 20px;
+  }
+  .aboutUsPadding {
+    padding-top: 230px;
+    padding-bottom: 70px;
+  }
+}

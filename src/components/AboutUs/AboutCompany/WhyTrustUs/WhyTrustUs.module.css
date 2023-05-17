@@ -1,14 +1,11 @@
-.whyTrustUs{
-  background-color: #F9FAFB;
+.whyTrustUs {
+  background-color: #f9fafb;
   border: 1px solid #efeff0;
 }
-.header {
-  margin-bottom: 100px;
-}
 .body {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 50px 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 50px 50px;
 }
 .content {
   max-width: 350px;
@@ -19,20 +16,17 @@
 }
 
 @media (max-width: 1023px) {
-  .header {
-    margin-bottom: 60px;
-  }
   .body {
     grid-template-columns: 1fr 1fr;
     gap: 50px 50px;
-}
+  }
 }
 @media (max-width: 600px) {
   .body {
     grid-template-columns: 1fr;
     gap: 50px 50px;
+  }
+  .content {
+    max-width: 100%;
+  }
 }
-.content {
-  max-width: 100%;
-}
-} 

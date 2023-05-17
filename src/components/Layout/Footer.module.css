@@ -16,19 +16,19 @@
   align-items: flex-start;
 }
 .link {
-    color: #787E8C;
+  color: #787e8c;
 }
 .link:hover {
-    color: white;
+  color: white;
 }
 .bottom {
-    background-color: black;
-    border-top: 1px solid rgba(255, 255, 255, 0.170);
+  background-color: black;
+  border-top: 1px solid rgba(255, 255, 255, 0.17);
 }
 .footerBottomContainer {
-    max-width: 1110px;
-    margin: 0px auto;
-    padding: 20px 0px;
+  max-width: 1110px;
+  margin: 0px auto;
+  padding: 20px 0px;
 }
 @media (max-width: 968px) {
   .row {
@@ -40,13 +40,16 @@
   .links {
     max-width: 100%;
   }
-}
-@media (max-width:767px) {
   .footerBottomContainer {
     padding: 20px 40px;
   }
 }
-@media (max-width:430px) {
+@media (max-width: 767px) {
+  .footerBottomContainer {
+    padding: 20px 40px;
+  }
+}
+@media (max-width: 430px) {
   .footerBottomContainer {
     padding: 20px;
   }

@@ -1,0 +1,16 @@
+
+.detailInfo {
+  margin-bottom: 10px;
+}
+
+.detailInfo h5 {
+  letter-spacing: -0.01em;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 30px;
+}
+@media (max-width: 430px) {
+  .columnInfo {
+    flex-direction: column;
+  }
+}

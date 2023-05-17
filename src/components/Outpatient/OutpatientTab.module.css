@@ -3,6 +3,9 @@
   margin: 0px 0px 50px 0px;
   border-bottom: 1px solid #e6e8ec;
 }
+.outpatientTabs:hover {
+  cursor: default;
+}
 
 .outpatientTab {
   padding: 10px 0px;
@@ -39,13 +42,13 @@
 }
 
 @media (max-width: 767px) {
-    .content {
-        grid-template-columns: 1fr;
-    }
-    .outpatientContent  {
-        max-width: 100%;
-    }
-    .outpatientTabs {
-      display: none;
-    }
+  .content {
+    grid-template-columns: 1fr;
+  }
+  .outpatientContent {
+    max-width: 100%;
+  }
+  .outpatientTabs {
+    display: none;
+  }
 }

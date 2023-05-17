@@ -1,14 +1,14 @@
 .faqTab {
-    margin: 0px 0px 20px 0px;
-    color: #787e8c;
-    cursor: pointer;
+  margin: 0px 0px 20px 0px;
+  color: #787e8c;
+  cursor: pointer;
+}
+.faqTab:hover,
+.faqTab.active {
+  color: black;
+}
+@media (max-width: 767px) {
+  .faqTabs {
+    display: none;
   }
-  .faqTab:hover,
-  .faqTab.active {
-    color: black;
-  }
-  @media (max-width: 767px) {
-    .faqTabs {
-      display: none;
-    }
-  }
+}

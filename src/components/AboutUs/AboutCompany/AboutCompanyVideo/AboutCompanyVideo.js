@@ -1,18 +1,18 @@
-import Container from "@/components/Layout/Container";
+import Container from "@/components/UI/Container/Container";
+import Eyebrow from "@/components/UI/Eyebrow/Eyebrow";
+
 import styles from "./AboutCompanyVideo.module.css";
 
 const AboutCompanyVideo = (props) => {
   return (
     <section>
       <Container>
-        <div className={styles.header}>
-          <p className="eyebrows">Узнайте нас лучше</p>
-          <h2>Сохраняем здоровье, опираясь на научный подход</h2>
-          <p>
-            Мы работаем во благо Вашего здоровья и помогаем быть здоровыми,
-            каждый день!
-          </p>
-        </div>
+        <Eyebrow
+          eyebrowTex="Узнайте нас лучше"
+          titleText="Сохраняем здоровье, опираясь на научный подход"
+          paragraphText=" Мы работаем во благо Вашего здоровья и помогаем быть здоровыми, каждый день!"
+        />
+
         <div className={styles.videoContainer}>
           <iframe
             className={styles.video}

@@ -1,0 +1,25 @@
+.ourValues {
+  background-color: #f9fafb;
+  border: 1px solid #e6e8ec;
+}
+.body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 55px 100px;
+}
+.content {
+  max-width: 505px;
+  width: 100%;
+}
+.title {
+  color: black;
+}
+
+@media (max-width: 767px) {
+  .body {
+    grid-template-columns: 1fr;
+  }
+  .content {
+    max-width: 100%;
+  }
+}

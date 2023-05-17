@@ -1,0 +1,29 @@
+.callToAction {
+  background-color: #f9fafb;
+  border: 1px solid #efeff0;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+.column {
+  max-width: 430px;
+  width: 100%;
+}
+.columnInfo {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+@media (max-width: 1023px) {
+  .row {
+    flex-direction: column;
+  }
+  .firstColumn {
+    margin-bottom: 50px;
+  }
+  .column {
+    max-width: 100%;
+  }
+}

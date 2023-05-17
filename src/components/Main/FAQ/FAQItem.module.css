@@ -15,9 +15,13 @@
 .title {
   color: black;
   padding-bottom: 10px;
+  max-width: 600px;
 }
 .title:hover {
-  color: #616161;
+  color: var(--color-blue-100);
+}
+.paragraph {
+  max-width: 608px;
 }
 .answer {
   display: none;
@@ -26,16 +30,23 @@
   display: block;
 }
 
-.faq-icon {
-  content: "";
-  width: 12px;
-  height: 12px;
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
-  transition: -webkit-transform 0.2s;
-  transition: transform 0.2s;
-  transition: transform 0.2s, -webkit-transform 0.2s;
+@media (max-width: 767px) {
+  .paragraph {
+    max-width: 500px;
+  }
+  .title {
+    color: black;
+    padding-bottom: 10px;
+    max-width: 500px;
+  }
 }
-.faq-icon-active {
-  transform: translateY(-50%) rotate(180deg);
+@media (max-width: 530px) {
+  .paragraph {
+    max-width: 300px;
+  }
+  .title {
+    color: black;
+    padding-bottom: 10px;
+    max-width: 300px;
+  }
 }

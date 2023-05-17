@@ -1,0 +1,51 @@
+.aboutUsNav {
+  position: fixed;
+  top: 78px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  border-bottom: 1px solid #e6e8ec;
+  width: 100%;
+  z-index: 999;
+  overflow-y: scroll;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  max-width: 700px;
+  width: 100%;
+}
+.link {
+  color: #787e8c;
+  padding: 20px 0px;
+}
+.link:hover {
+  color: #787e8c;
+}
+.link.active {
+  color: #000000;
+  border-bottom: 2px solid #000000;
+}
+
+@media (max-width: 1023px) {
+  .aboutUsNav {
+    top: 61px;
+  }
+  .container {
+    padding: 0px 40px;
+  }
+}
+@media (max-width: 530px) {
+  .container {
+    padding: 0px 20px;
+    overflow: scroll;
+    overflow-y: scroll;
+    min-width: 560px;
+  }
+  .link {
+    margin-right: 20px;
+  }
+}

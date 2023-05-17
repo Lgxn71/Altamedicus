@@ -1,11 +1,7 @@
 .title {
   max-width: 570px;
 }
-.header {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 50px;
-}
+
 .employees {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -15,24 +11,22 @@
   width: 100%;
 }
 .specialists {
-  background-color: #F9FAFB;
-  border: 1px solid #EFEFF0;
+  background-color: #f9fafb;
+  border: 1px solid #efeff0;
 }
 @media (max-width: 1230px) {
   .employees {
     grid-template-columns: 1fr 1fr;
     gap: 50px 50px;
   }
-  .header {
-    display: block;
-  }
+
   .title {
     padding-bottom: 20px;
   }
 }
-@media (max-width: 767PX) {
+@media (max-width: 767px) {
   .employees {
     grid-template-columns: 1fr;
-    gap: 50px 0PX;
+    gap: 50px 0px;
   }
 }

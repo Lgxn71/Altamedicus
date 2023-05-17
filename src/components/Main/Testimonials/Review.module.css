@@ -1,0 +1,27 @@
+.review {
+  display: none;
+}
+.review.active {
+  display: block;
+}
+
+.testimonialContent {
+  max-width: 530px;
+  width: 100%;
+}
+.testimonialTitle {
+  color: black;
+  font-weight: 700;
+}
+.testimonialText {
+  color: #000;
+}
+
+@media (max-width: 767px) {
+  .testimonialContent {
+    max-width: 685px;
+  }
+  .review {
+    margin-bottom: 50px;
+  }
+}
