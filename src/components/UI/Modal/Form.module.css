@@ -1,0 +1,105 @@
+.form {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 450px;
+  border-radius: 2px;
+  border: 1px solid #d9dde7;
+  z-index: 3000;
+  transform: translate(-50%, -50%);
+  background-color: white;
+}
+
+.header {
+  padding: 30px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #efeff0;
+}
+.header h4 {
+  color: #000000;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+}
+.iconContainer {
+  width: 15px;
+  height: 15px;
+}
+.iconContainer:hover {
+  width: 15px;
+  cursor: pointer;
+  height: 15px;
+}
+
+.body {
+  padding: 20px 40px;
+}
+.body label {
+  color: #343842;
+  display: block;
+  padding-bottom: 10px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+}
+.body input {
+  border: 1px solid #efeff0;
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 17px;
+  width: 100%;
+  max-width: 340px;
+  padding: 13px 15px;
+  margin-bottom: 20px;
+}
+.body input::placeholder {
+  color: #b2b5bd;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+}
+.body textarea {
+  font-family: inherit;
+  border: 1px solid #efeff0;
+  max-width: 340px;
+  width: 100%;
+  padding: 13px 15px;
+  height: 86px;
+  resize: none;
+}
+.body textarea::placeholder {
+  color: #b2b5bd;
+}
+
+.actions {
+  padding: 10px 40px 40px 40px;
+}
+.actions button {
+  padding: 13px 0;
+  width: 370px;
+}
+@media (max-width: 470px) {
+  .form {
+    width: 345px;
+  }
+  .header {
+    padding: 20px 30px;
+  }
+  .body {
+    padding: 20px;
+  }
+  .body input {
+    width: 260px;
+  }
+  .body textarea {
+    max-width: 260px;
+  }
+  .actions {
+    padding: 20px;
+  }
+  .actions button {
+    width: 292px;
+  }
+}

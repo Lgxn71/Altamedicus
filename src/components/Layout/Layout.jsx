@@ -6,7 +6,7 @@ import AboutUsNav from "./NavBar/AboutUsNavBar.jsx";
 import CTA from "./CTA/CTA.jsx";
 import Footer from "./Footer.jsx";
 
-function Layout(props) {
+const Layout = (props) => {
   const router = useRouter();
   const aboutUsPath = router.pathname.substring(0, 10);
 
@@ -19,6 +19,6 @@ function Layout(props) {
       <Footer />
     </>
   );
-}
+};
 
 export default Layout;

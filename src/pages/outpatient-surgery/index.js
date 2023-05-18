@@ -1,3 +1,4 @@
+import Head from "next/head";
 import Hero from "@/components/UI/Hero/Hero";
 import HeroImg from "/public/img/outpatientIMG.png";
 
@@ -6,6 +7,13 @@ import OutpatientSurgery from "@/components/Outpatient/OutpatientSurgery.jsx";
 const ServicesPage = () => {
   return (
     <>
+      <Head>
+        <title>Altamedicus</title>
+        <meta
+          name="description"
+          content="Амбулаторная хирургия в Альтамедикус"
+        />
+      </Head>
       <Hero
         isButtonShown={false}
         highlightedText="Alta Medicus"

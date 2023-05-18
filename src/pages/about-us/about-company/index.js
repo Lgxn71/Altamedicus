@@ -1,3 +1,5 @@
+import Head from "next/head";
+
 import Hero from "@/components/UI/Hero/Hero";
 import HeroImg from "../../../../public/img/AboutUsHeroIMG.png";
 
@@ -7,6 +9,10 @@ import WhyTrustUs from "../../../components/AboutUs/AboutCompany/WhyTrustUs/WhyT
 const AboutUs = (props) => {
   return (
     <>
+      <Head>
+        <title>Altamedicus</title>
+        <meta name="description" content="о Альтамедкус" />
+      </Head>
       <Hero
         aboutUsPadding={true}
         highlightedText="вашем здоровье"

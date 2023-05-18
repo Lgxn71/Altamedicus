@@ -1,3 +1,4 @@
+import Head from "next/head";
 import Hero from "@/components/UI/Hero/Hero";
 import OurValues from "@/components/AboutUs/Culture/OurValues";
 import WhyUs from "@/components/AboutUs/Culture/WhyUs";
@@ -6,6 +7,10 @@ import CultureHeroIMG from "/public/img/CultureHeroIMG.png";
 const CulturePage = () => {
   return (
     <>
+      <Head>
+        <title>Altamedicus</title>
+        <meta name="description" content="Культруа Альтамедкус" />
+      </Head>
       <Hero
         isButtonShown={false}
         highlightedText="расти"

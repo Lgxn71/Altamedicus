@@ -6,17 +6,16 @@ const handler = async (req, res) => {
     const jsonBody = req.body;
     const convertedJson = JSON.parse(jsonBody);
 
-    const { name, telephone } = convertedJson;
+    const { name, telephone, details } = convertedJson;
 
     const client = require("twilio")(accountSid, authToken);
     const response = await client.messages.create({
-      body: `Имя:${name} телефон:${telephone}`,
+      body: `Имя: ${name}, телефон: ${telephone} Детали: ${details}`,
       to: "+821064426041", // Text your number
       from: "+12705176200", // From a valid Twilio number
     });
 
     res.status(200).json({ message: "ITS ALIVE" });
-    console.log(response);
   }
 };
 export default handler;
