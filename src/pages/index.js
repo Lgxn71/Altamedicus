@@ -1,3 +1,4 @@
+import Head from "next/head.js";
 import Hero from "@/components/UI/Hero/Hero";
 import HeroImg from "/public/img/HeroIMG.png";
 
@@ -10,6 +11,10 @@ import FAQ from "../components/Main/FAQ/FAQ";
 export default function Home() {
   return (
     <>
+      <Head>
+        <title>Altamedicus</title>
+        <meta name="description" content="Добро пожаловать в Alta Medicus" />
+      </Head>
       <Hero
         isButtonShown={true}
         highlightedText="Alta Medicus"
