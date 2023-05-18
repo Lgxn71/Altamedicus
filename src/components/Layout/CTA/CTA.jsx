@@ -1,3 +1,5 @@
+import { useRecoilState } from "recoil";
+
 import CTATitle from "./CTATitle.jsx";
 import CTAInfo from "./CTAInfo.jsx";
 
@@ -8,7 +10,14 @@ import ButtonPrimary from "../../UI/Buttons/ButtonPrimary.jsx";
 
 import styles from "./CTA.module.css";
 
+import { popupState } from "../NavBar/NavigationBar.jsx";
 const CTA = () => {
+  const [isPopupShown, setIsPopupShown] = useRecoilState(popupState);
+
+  const openModalHandler = () => {
+    setIsPopupShown(true);
+  };
+
   return (
     <section className={styles.callToAction}>
       <Container>
@@ -19,7 +28,9 @@ const CTA = () => {
               paragraph="Перезвоним, проконсультируем, и запишем Вас на прием!"
             />
 
-            <ButtonPrimary>Заказать звонок</ButtonPrimary>
+            <ButtonPrimary onClick={openModalHandler}>
+              Заказать звонок
+            </ButtonPrimary>
           </div>
 
           <div className={styles.column}>

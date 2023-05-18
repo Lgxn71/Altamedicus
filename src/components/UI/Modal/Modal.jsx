@@ -2,11 +2,11 @@ import { useFormInput } from "@/hooks/useFormInput";
 
 import { createPortal } from "react-dom";
 
-import Backdrop from "./Backdrop";
+import Backdrop from "./Backdrop.jsx";
 
-import classes from "./Modal.module.css";
+import styles from "./Modal.module.css";
 
-const Modal = (props) => {
+const Modal = ({ onCloseModal }) => {
   const nameProps = useFormInput("");
   const telProps = useFormInput("");
 
@@ -20,13 +20,14 @@ const Modal = (props) => {
       }),
       "Content-Type": `application/json`,
     });
+    console.log(response);
   };
   return (
     <>
       {createPortal(
         <>
-          <Backdrop onCloseModal={props.onCloseModal}></Backdrop>
-          <form onSubmit={submitFormHandler} className={classes.form}>
+          <Backdrop onCloseModal={onCloseModal} />
+          <form onSubmit={submitFormHandler} className={styles.form}>
             <label htmlFor="name"> Name:</label>
             <input
               onChange={nameProps.onChange}
@@ -35,16 +36,15 @@ const Modal = (props) => {
               name="name"
               type="text"
             />
-            <label>Phone Number:</label>
+            <label htmlFor="phone">Phone Number:</label>
             <input
               onChange={telProps.onChange}
               value={telProps.value}
-              htmlFor="phone"
+              id="phone"
+              name="phone"
               type="tel"
             />
-            <button type="submit" name="phone" id="phone">
-              Request Call
-            </button>
+            <button type="submit">Request Call</button>
           </form>
         </>,
         document.getElementById("modal")

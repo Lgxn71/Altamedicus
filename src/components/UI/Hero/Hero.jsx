@@ -1,3 +1,6 @@
+import { useRecoilState } from "recoil";
+import { popupState } from "@/components/Layout/NavBar/NavigationBar.jsx";
+
 import Image from "next/image";
 import ButtonPrimary from "../Buttons/ButtonPrimary.jsx";
 
@@ -14,6 +17,12 @@ const Hero = ({
   img,
   aboutUsPadding,
 }) => {
+  const [isPopupShown, setIsPopupShown] = useRecoilState(popupState);
+
+  const openModalHandler = () => {
+    setIsPopupShown(true);
+  };
+
   return (
     <section>
       <div
@@ -29,7 +38,9 @@ const Hero = ({
           <p>{paragraphText}</p>
 
           {isButtonShown ? (
-            <ButtonPrimary>Заказать Звонок</ButtonPrimary>
+            <ButtonPrimary onClick={openModalHandler}>
+              Заказать Звонок
+            </ButtonPrimary>
           ) : undefined}
         </div>
       </div>

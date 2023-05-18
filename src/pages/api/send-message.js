@@ -1,7 +1,7 @@
 const handler = async (req, res) => {
   if (req.method === "POST") {
     const accountSid = "AC06f65bb67668c7ca7452a042c037675e";
-    const authToken = "0eeddae54fca48189f042003ecc6a4b7";
+    const authToken = "62c5ae484abaede0a084d311a23472c7";
 
     const jsonBody = req.body;
     const convertedJson = JSON.parse(jsonBody);
@@ -16,6 +16,7 @@ const handler = async (req, res) => {
     });
 
     res.status(200).json({ message: "ITS ALIVE" });
+    console.log(response);
   }
 };
 export default handler;

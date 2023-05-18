@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { useRouter } from "next/router";
 
+import { atom, useRecoilState } from "recoil";
+
 import Link from "next/link";
 import Image from "next/image";
 
@@ -8,24 +10,30 @@ import { MAINLINKS } from "@/data/LinksData/links";
 
 import logo from "../../../../public/img/Logo.png";
 
+import MobileAsideBar from "./MobileAsideBar";
+
 import ButtonPrimary from "@/components/UI/Buttons/ButtonPrimary";
-import Modal from "@/components/UI/Modal/Modal";
+import Modal from "@/components/UI/Modal/Modal.jsx";
 
 import styles from "./NavigationBar.module.css";
-import MobileAsideBar from "./MobileAsideBar";
+
+export const popupState = atom({
+  key: "popupOrder",
+  default: false,
+});
 
 const NavigationBar = () => {
   const router = useRouter();
 
   const [isSideBarMobileOpen, setIsSideBarMobileOpen] = useState(false);
-  // change to context or redux?
-  const [modalIsOpen, setModalIsOpen] = useState(false);
+
+  const [isPopupShown, setIsPopupShown] = useRecoilState(popupState);
 
   const openModalHandler = (event) => {
-    setModalIsOpen(true);
+    setIsPopupShown(true);
   };
   const closeModalHandler = () => {
-    setModalIsOpen(false);
+    setIsPopupShown(false);
   };
 
   const sideBarMobileHandler = () => {
@@ -60,7 +68,7 @@ const NavigationBar = () => {
 
   return (
     <>
-      {modalIsOpen ? (
+      {isPopupShown ? (
         <Modal
           onOpenModal={openModalHandler}
           onCloseModal={closeModalHandler}
@@ -99,14 +107,3 @@ const NavigationBar = () => {
 };
 
 export default NavigationBar;
-
-// const navBarHandler = () => {
-//   if (window.innerWidth >= 768) {
-//     sideBarMobileHandler(false);
-//   }
-// };
-
-//  useEffect(() => {
-//   window.addEventListener("resize", navBarHandler);
-//    return () => window.removeEventListener("resize", navBarHandler);
-//  }, []);

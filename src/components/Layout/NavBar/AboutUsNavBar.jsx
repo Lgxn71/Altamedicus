@@ -8,24 +8,24 @@ import styles from "./AboutUsNavBar.module.css";
 
 const AboutUsNavBar = () => {
   const router = useRouter();
+
+  const AboutUsNavBar = ABOUT_US_NAVBAR_DATA.map((link) => (
+    <Link
+      key={link.href}
+      href={link.href}
+      className={
+        router.pathname === link.href
+          ? `${styles.link} ${styles.active}`
+          : `${styles.link}`
+      }
+      id={link.href}
+    >
+      {link.text}
+    </Link>
+  ));
   return (
     <div className={styles.aboutUsNav}>
-      <div className={styles.container}>
-        {ABOUT_US_NAVBAR_DATA.map((link) => (
-          <Link
-            key={link.href}
-            href={link.href}
-            className={
-              router.pathname === link.href
-                ? `${styles.link} ${styles.active}`
-                : `${styles.link}`
-            }
-            id={link.href}
-          >
-            {link.text}
-          </Link>
-        ))}
-      </div>
+      <div className={styles.container}>{AboutUsNavBar }</div>
     </div>
   );
 };

@@ -1,3 +1,6 @@
+import { useRecoilState } from "recoil";
+import { popupState } from "./NavigationBar";
+
 import Link from "next/link";
 
 import ButtonPrimary from "@/components/UI/Buttons/ButtonPrimary";
@@ -7,6 +10,12 @@ import { MAINLINKS } from "@/data/LinksData/links";
 import styles from "./MobileAsideBar..module.css";
 
 const MobileAsideBar = ({ sideBarMobileHandler, isSideBarMobileOpen }) => {
+  const [isPopupShown, setIsPopupShown] = useRecoilState(popupState);
+
+  const openModalHandler = () => {
+    setIsPopupShown(true);
+  };
+
   const mainLinkMap = MAINLINKS.map((link) => (
     <Link
       key={link.href}
@@ -30,7 +39,9 @@ const MobileAsideBar = ({ sideBarMobileHandler, isSideBarMobileOpen }) => {
         {mainLinkMap}
 
         <div className={styles.buttonContainer}>
-          <ButtonPrimary>Заказать звонок</ButtonPrimary>
+          <ButtonPrimary onClick={openModalHandler}>
+            Заказать звонок
+          </ButtonPrimary>
         </div>
       </div>
     </aside>
