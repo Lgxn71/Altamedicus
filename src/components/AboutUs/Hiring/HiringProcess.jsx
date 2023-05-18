@@ -1,4 +1,4 @@
-import styles from "./hiringProcess.module.css";
+import styles from "./HiringProcess.module.css";
 
 const HiringProcess = () => {
   const hiringProcessMap = hiringData.map((section) => (

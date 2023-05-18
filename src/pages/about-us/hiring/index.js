@@ -1,6 +1,6 @@
 import Head from "next/head";
 import HowToApply from "@/components/AboutUs/Hiring/HowToApply";
-import HiringProcess from "@/components/AboutUs/Hiring/hiringProcess";
+import HiringProcess from "@/components/AboutUs/Hiring/HiringProcess";
 
 import Hero from "@/components/UI/Hero/Hero";
 import Container from "@/components/UI/Container/Container";

@@ -1,0 +1,39 @@
+.hiringProcess {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.blackText {
+  color: black;
+}
+.blueText {
+  color: #0047ff;
+}
+
+.title {
+  color: black;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.description {
+  padding-bottom: 40px;
+}
+
+.hiringDetails {
+  padding: 30px;
+  max-width: 345px;
+  width: 100%;
+  border: 1px solid #e6e8ec;
+}
+@media (max-width: 1024px) {
+  .hiringProcess {
+    flex-wrap: wrap;
+  }
+  .hiringDetails {
+    max-width: 100%;
+  }
+}
