@@ -37,15 +37,15 @@ const Hero = ({
           </h1>
           <p>{paragraphText}</p>
 
-          {isButtonShown ? (
+          {isButtonShown && (
             <ButtonPrimary onClick={openModalHandler}>
               Заказать Звонок
             </ButtonPrimary>
-          ) : undefined}
+          )}
         </div>
       </div>
 
-      {isImageShown ? (
+      {isImageShown && (
         <Image
           src={img}
           alt={altImage}
@@ -53,7 +53,7 @@ const Hero = ({
           className={styles.heroImage}
           quality={100}
         />
-      ) : undefined}
+      )}
     </section>
   );
 };

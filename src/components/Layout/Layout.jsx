@@ -9,7 +9,7 @@ import Footer from "./Footer.jsx";
 const Layout = (props) => {
   const router = useRouter();
   const aboutUsPath = router.pathname.substring(0, 10);
-
+ 
   return (
     <>
       <NavigationBar />

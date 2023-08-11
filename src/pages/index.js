@@ -14,6 +14,7 @@ export default function Home() {
       <Head>
         <title>Altamedicus</title>
         <meta name="description" content="Добро пожаловать в Alta Medicus" />
+        <link rel="icon" href="/favicon.ico" />
       </Head>
       <Hero
         isButtonShown={true}
