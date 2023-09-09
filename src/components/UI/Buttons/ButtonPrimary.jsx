@@ -1,9 +1,9 @@
 import styles from "./ButtonPrimary.module.css";
 
-const ButtonPrimary = (props) => {
+const ButtonPrimary = ({ onClick, children }) => {
   return (
-    <button onClick={props.onClick} className={styles.btnPrimary} href="">
-      {props.children}
+    <button onClick={onClick} className={styles.btnPrimary}>
+      {children}
     </button>
   );
 };

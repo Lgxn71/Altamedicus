@@ -5,7 +5,7 @@ const EmployeesPage = () => {
   return (
     <>
       <Head>
-        <title>Altamedicus</title>
+        <title>Artamedicus</title>
         <meta name="description" content="Специалисты Альтамедкус" />
       </Head>
       <Specialists />

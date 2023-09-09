@@ -13,6 +13,7 @@
     "@fortawesome/free-regular-svg-icons": "^6.4.0",
     "@fortawesome/free-solid-svg-icons": "^6.4.0",
     "@fortawesome/react-fontawesome": "^0.2.0",
+    "@vercel/analytics": "^1.0.2",
     "eslint": "8.34.0",
     "eslint-config-next": "^13.4.2",
     "next": "^13.4.2",
@@ -21,7 +22,8 @@
     "recoil": "^0.7.7",
     "sharp": "^0.31.3",
     "swr": "^2.0.4",
-    "twilio": "^4.11.0"
+    "twilio": "^4.11.0",
+    "typescript": "^5.2.2"
   },
   "devDependencies": {
     "json-loader": "^0.5.7"

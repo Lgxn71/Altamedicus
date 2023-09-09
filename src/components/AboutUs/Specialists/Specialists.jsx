@@ -23,7 +23,7 @@ const Specialists = () => {
         isButtonShown={false}
         highlightedText="Команда"
         beforeHighlight="Наша "
-        paragraphText=" Врачи Alta Medicus Clinic — эксперты в своих областях медицины и
+        paragraphText=" Врачи Arta Medicus Clinic — эксперты в своих областях медицины и
           владеют всеми передовыми методиками."
       />
       <Container>

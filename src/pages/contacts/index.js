@@ -5,7 +5,7 @@ const ContactsPage = (props) => {
   return (
     <>
       <Head>
-        <title>Altamedicus</title>
+        <title>Artamedicus</title>
         <meta name="description" content="Наши контакты" />
       </Head>
       <Contacts />

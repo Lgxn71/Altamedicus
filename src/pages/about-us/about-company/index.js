@@ -10,7 +10,7 @@ const AboutUs = (props) => {
   return (
     <>
       <Head>
-        <title>Altamedicus</title>
+        <title>Artamedicus</title>
         <meta name="description" content="о Альтамедкус" />
       </Head>
       <Hero

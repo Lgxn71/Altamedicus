@@ -27,7 +27,7 @@ const Hero = ({
     <section>
       <div
         className={`${styles.heroContainer}
-      ${aboutUsPadding ? styles.aboutUsPadding : undefined}`}
+      ${aboutUsPadding && styles.aboutUsPadding}`}
       >
         <div className={styles.title}>
           <h1>
@@ -51,7 +51,7 @@ const Hero = ({
           alt={altImage}
           priority
           className={styles.heroImage}
-          quality={100}
+          quality={90}
         />
       )}
     </section>

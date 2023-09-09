@@ -1,3 +1,5 @@
+import React, { useState, useEffect } from "react";
+
 import Link from "next/link";
 import Image from "next/image";
 
@@ -9,6 +11,19 @@ import logo from "../../../public/img/Logo_White.png";
 import styles from "./Footer.module.css";
 
 const Footer = () => {
+  const [currentYear, setCurrentYear] = useState(new Date().getFullYear());
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      const newYear = new Date().getFullYear();
+      if (newYear !== currentYear) {
+        setCurrentYear(newYear);
+      }
+    }, 60000);
+
+    return clearInterval(intervalId);
+  }, [currentYear]);
+
   const aboutUs = ABOUT_US_NAVBAR_DATA.map((link) => (
     <Link
       key={link.href}
@@ -37,7 +52,7 @@ const Footer = () => {
       </Container>
       <div className={styles.bottom}>
         <div className={styles.footerBottomContainer}>
-          <p>(c) ArtaMedicus 2022 ВСЕ ПРАВА ЗАЩИЩЕНЫ.</p>
+          <p>(c) ArtaMedicus {currentYear} ВСЕ ПРАВА ЗАЩИЩЕНЫ.</p>
         </div>
       </div>
     </footer>

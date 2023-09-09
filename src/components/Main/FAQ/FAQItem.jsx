@@ -22,7 +22,7 @@ const FAQItem = (props) => {
           {props.answer}
         </p>
       </div>
-      <Plus />
+      <Plus isOpen={open} />
     </div>
   );
 };

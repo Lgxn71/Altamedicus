@@ -2,6 +2,8 @@ import Layout from "@/components/Layout/Layout.jsx";
 
 import { RecoilRoot } from "recoil";
 
+import { Analytics } from "@vercel/analytics/react";
+
 import { Inter } from "next/font/google";
 
 import "./global.css";
@@ -18,6 +20,7 @@ export default function App({ Component, pageProps }) {
           }
         `}</style>
         <Component {...pageProps} />
+        <Analytics></Analytics>
       </Layout>
     </RecoilRoot>
   );

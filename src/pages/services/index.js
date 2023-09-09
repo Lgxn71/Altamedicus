@@ -5,7 +5,7 @@ const ServicesPage = () => {
   return (
     <>
       <Head>
-        <title>Altamedicus</title>
+        <title>Artamedicus</title>
         <meta
           name="description"
           content="Услуги предоставляемые Альтамедикус"

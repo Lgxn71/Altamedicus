@@ -16,7 +16,7 @@ const WhyUs = (props) => {
         <Eyebrow
           eyebrowText="Почему именно мы"
           titleText="Почему нам доверяют свое здоровье?"
-          paragraphText="В Alta Medicus Вы найдете для себя все решения для вашей красоты, молодости и здоровья."
+          paragraphText="В Arta Medicus Вы найдете для себя все решения для вашей красоты, молодости и здоровья."
         />
         <ul className={styles.body}>{whyTrustUsDataMap}</ul>
       </Container>
@@ -40,7 +40,7 @@ const whyTrustUsData = [
   {
     id: 3,
     title: "Многолетний опыт",
-    text: "Средний профессиональный стаж врачей в Alta Medicus clinic - 20 лет.",
+    text: "Средний профессиональный стаж врачей в Arta Medicus clinic - 20 лет.",
   },
   {
     id: 4,

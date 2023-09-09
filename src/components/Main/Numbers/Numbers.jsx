@@ -18,7 +18,7 @@ const Numbers = () => {
     <section className={styles.numbers}>
       <Container>
         <div className={styles.header}>
-          <h2>Клиника Alta Medicus сегодня это:</h2>
+          <h2>Клиника Arta Medicus сегодня это:</h2>
           <p>Наши достижения в медицинском путешествии обозначено цифрами</p>
         </div>
         <ul className={styles.achievements}>{achievementsMap}</ul>

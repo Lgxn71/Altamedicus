@@ -3,8 +3,13 @@ import { faPlus } from "@fortawesome/free-solid-svg-icons";
 
 import styles from "./Plus.module.css";
 
-const Plus = () => {
-  return <FontAwesomeIcon className={styles.iconContainer} icon={faPlus} />;
+const Plus = ({ isOpen }) => {
+  return (
+    <FontAwesomeIcon
+      className={`${styles.iconContainer} ${isOpen ? styles.transform : ""}`}
+      icon={faPlus}
+    />
+  );
 };
 
 export default Plus;

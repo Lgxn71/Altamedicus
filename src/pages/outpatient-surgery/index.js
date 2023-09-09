@@ -8,7 +8,7 @@ const ServicesPage = () => {
   return (
     <>
       <Head>
-        <title>Altamedicus</title>
+        <title>Artamedicus</title>
         <meta
           name="description"
           content="Амбулаторная хирургия в Альтамедикус"
@@ -16,7 +16,7 @@ const ServicesPage = () => {
       </Head>
       <Hero
         isButtonShown={false}
-        highlightedText="Alta Medicus"
+        highlightedText="Arta Medicus"
         beforeHighlight="Амбулаторная хирургия в "
         afterHighlight=""
         paragraphText="Хирургия одного дня — это различные по сложности и объему операции, которые позволяют в кратчайшие сроки (в пределах 1 суток) решить проблему, связанную с заболеванием или решением пациента напластическую операцию."

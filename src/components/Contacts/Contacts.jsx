@@ -27,10 +27,8 @@ const Contacts = () => {
         highlightedText="здесь"
         beforeHighlight="Мы находимся "
         afterHighlight=""
-        paragraphText="Удобное расположение - плюс Alta Medicus Clinic, ведь в мегаполисе так важно экономить каждую минуту."
+        paragraphText="Удобное расположение - плюс Arta Medicus Clinic, ведь в мегаполисе так важно экономить каждую минуту."
         isImageShown={false}
-        img={undefined}
-        altImage=""
       />
 
       <Container isPadding={true}>
@@ -38,7 +36,6 @@ const Contacts = () => {
           {contactMapping}
         </ul>
         {/* MAP */}
-        <Image src={map} alt="карта" className={styles.map} priority />
       </Container>
     </section>
   );

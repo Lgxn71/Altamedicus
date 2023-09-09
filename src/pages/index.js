@@ -12,15 +12,14 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Altamedicus</title>
-        <meta name="description" content="Добро пожаловать в Alta Medicus" />
+        <title>Artamedicus</title>
+        <meta name="description" content="Добро пожаловать в Arta Medicus" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Hero
         isButtonShown={true}
-        highlightedText="Alta Medicus"
+        highlightedText="Arta Medicus"
         beforeHighlight="Добро пожаловать в "
-        afterHighlight=""
         paragraphText=" Мы улучшаем качество жизни людей, сохраняем молодость, красоту и здоровье. Опираемся на многолетний опыт, эффективные технологии и профессионализм."
         isImageShown={true}
         img={HeroImg}

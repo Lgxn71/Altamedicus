@@ -9,7 +9,7 @@ const HiringPage = () => {
   return (
     <>
       <Head>
-        <title>Altamedicus</title>
+        <title>Artamedicus</title>
         <meta name="description" content="Процесс найма в Альтамедкус" />
       </Head>
       <Hero

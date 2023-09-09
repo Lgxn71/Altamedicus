@@ -8,7 +8,7 @@ const CulturePage = () => {
   return (
     <>
       <Head>
-        <title>Altamedicus</title>
+        <title>Artamedicus</title>
         <meta name="description" content="Культруа Альтамедкус" />
       </Head>
       <Hero
