@@ -8,8 +8,9 @@ const ServicesPage = () => {
         <title>Artamedicus</title>
         <meta
           name="description"
-          content="Услуги предоставляемые Альтамедикус"
+          content="ArtaMedicus - Преобразим Ваши Мечты в Реальность"
         />
+        <meta property="og:image" content="/OG.png" />
       </Head>
       <Uslugi />
     </>

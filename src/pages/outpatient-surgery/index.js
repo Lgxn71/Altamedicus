@@ -11,8 +11,9 @@ const ServicesPage = () => {
         <title>Artamedicus</title>
         <meta
           name="description"
-          content="Амбулаторная хирургия в Альтамедикус"
+          content="ArtaMedicus - Преобразим Ваши Мечты в Реальность"
         />
+        <meta property="og:image" content="/OG.png" />
       </Head>
       <Hero
         isButtonShown={false}

@@ -11,7 +11,11 @@ const AboutUs = (props) => {
     <>
       <Head>
         <title>Artamedicus</title>
-        <meta name="description" content="о Альтамедкус" />
+        <meta
+          name="description"
+          content="ArtaMedicus - Преобразим Ваши Мечты в Реальность"
+        />
+        <meta property="og:image" content="/OG.png" />
       </Head>
       <Hero
         aboutUsPadding={true}
