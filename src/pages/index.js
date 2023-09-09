@@ -13,7 +13,11 @@ export default function Home() {
     <>
       <Head>
         <title>Artamedicus</title>
-        <meta name="description" content="Добро пожаловать в Arta Medicus" />
+        <meta
+          name="description"
+          content="ArtaMedicus - Преобразим Ваши Мечты в Реальность"
+        />
+        <meta property="og:image" content="/OG.png" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Hero
