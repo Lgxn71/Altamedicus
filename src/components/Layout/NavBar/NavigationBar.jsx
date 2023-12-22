@@ -60,9 +60,7 @@ const NavigationBar = () => {
   const BURGER_LINES_MAP = BURGER_LINES.map((line) => (
     <span
       key={line}
-      className={`${styles.burgerLine} ${
-        isSideBarMobileOpen ? styles.active : ""
-      }`}
+      className={`${styles.burgerLine} ${isSideBarMobileOpen && styles.active}`}
     />
   ));
 
@@ -74,6 +72,7 @@ const NavigationBar = () => {
           onCloseModal={closeModalHandler}
         />
       ) : undefined}
+      
 
       <header className={styles.navigation}>
         <div className={styles.navContainer}>
