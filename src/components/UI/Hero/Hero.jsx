@@ -51,7 +51,7 @@ const Hero = ({
           alt={altImage}
           priority
           className={styles.heroImage}
-          quality={90}
+          quality={85}
         />
       )}
     </section>
