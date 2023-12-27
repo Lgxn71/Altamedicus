@@ -7,9 +7,7 @@ const handler = async (req, res) => {
 
     if (name.length === 0 || telephone.length === 0 || details.length === 0) {
       console.log("invalid input");
-      // place for error res
     }
-
 
     const client = require("twilio")(accountSid, authToken);
     const response = await client.messages.create({

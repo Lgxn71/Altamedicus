@@ -1,10 +1,10 @@
 .burgerMenu {
   position: fixed;
-  top: 62px;
+  top: 5px;
   z-index: 900;
   background-color: white;
   min-width: 290px;
-  height: 100vh;
+  height: 101vh;
   width: 100%;
   left: 0px;
   transform: translateX(0);
